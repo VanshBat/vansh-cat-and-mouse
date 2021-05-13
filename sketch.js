@@ -1,17 +1,15 @@
-var bgImg;
+var bgImage;
 var cat;
 
 function preload() {
     //load the images here
-    bgImg = loadImage("image/garden.png");
-    catImg1 = loadAnimation("image/cat1.png");
-    mouseImg1 = loadAnimation("image/mouse1.png");
-    catImg2 = loadAnimation("image/cat2.png");
-    mouseImg2 = loadAnimation("image/mouse2.png");
-    catImg3 = loadAnimation("image/cat3.png");
-    mouseImg3 = loadAnimation("image/mouse3.png");
-    catImg4 = loadAnimation("image/cat4.png");
-    mouseImg4 = loadAnimation("image/mouse4.png");
+    bgImage = loadImage("image/garden.png");
+    catImage1 = loadAnimation("image/cat1.png");
+    mouseImage1 = loadAnimation("image/mouse1.png");
+    catImage2 = loadAnimation("image/cat2.png");
+    mouseImage2 = loadAnimation("image/mouse2.png");
+    catImage3 = loadAnimation("image/cat3.png");
+    mouseImage3 = loadAnimation("image/mouse3.png");
 
 }
 
@@ -24,7 +22,7 @@ function setup(){
 
 function draw() {
 
-    background(bgImg);
+    background(bgImage);
     //Write condition here to evalute if tom and jerry collide
 
    
@@ -42,13 +40,13 @@ function keyPressed(){
   //For moving and changing animation write code here
 
    if(keyCode === RIGHT_ARROW) {
-      mouse.addAnimation("mouseTeasing", mouseImg2);
+      mouse.addAnimation("mouseTeasing", mouseImage2);
       mouse.changeAnimation("mouseTeasing");
       mouse.frameDelay = 25;
    }   
   
    if(keyCode === LEFT_ARROW) {
-      mouse.addAnimation("mouseTeasing", mouseImg2);
+      mouse.addAnimation("mouseTeasing", mouseImage2);
       mouse.changeAnimation("mouseTeasing");
       mouse.frameDelay = 25;
 
